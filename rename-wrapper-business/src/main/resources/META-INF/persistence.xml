@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="sysDefault" transaction-type="JTA">
+		<jta-data-source>rename-legado</jta-data-source>
+		<class>br.com.itix.comissoescnu.entity.Rubrica</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperRubrica</class>
+		<class>br.com.itix.comissoescnu.entity.Beneficiario</class>
+		<class>br.com.itix.comissoescnu.entity.Empresa</class>
+		<class>br.com.itix.comissoescnu.entity.Contrato</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperContrato</class>
+		<class>br.com.itix.comissoescnu.entity.Produto</class>
+		<class>br.com.itix.comissoescnu.entity.TipoProduto</class>
+		<class>br.com.itix.comissoescnu.entity.UnidadeNegocio</class>
+		<class>br.com.itix.comissoescnu.entity.FaturasPagas</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperBeneficiario</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperEmpresa</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperProduto</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperTipoProduto</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperUnidadeNegocio</class>
+		<class>br.com.itix.comissoescnu.entity.WrapperFaturasPagas</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+ 			<property name="javax.persistence.schema-generation.database.action" value="update" /> 
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
